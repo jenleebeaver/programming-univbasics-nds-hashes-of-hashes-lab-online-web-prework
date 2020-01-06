@@ -13,25 +13,33 @@
 #     }
 #   }
 # }
-# 
+#
 # PORTION_2 = {
 #   label: "Order"
 # }
-# 
+#
 # PORTION_3 = {
 #   label: "Family",
 #   sub_category: {
 #     label: "Genus",
 #   }
 # }
-# 
+#
 # PORTION_4 = {
 #   label: "Species",
 #   sub_category: nil
 # }
 
 def naming_system
-  # Remember:
+  animal_kingdom = {
+    Kingdom: {sub_category: "Phylum", second_category: "Class"},
+    Order: {},
+    Family: {sub_category: "Genus"},
+    Species: {}
+  }
+
+   return animal_kingdom
+   #Remember:
   #  Kingdom
   #  Phylum
   #  Class
